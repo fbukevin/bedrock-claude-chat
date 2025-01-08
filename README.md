@@ -69,8 +69,8 @@ By using the [Agent functionality](./docs/AGENT.md), your chatbot can automatica
 ## Deployment
 There are two ways to deploy a chatbot:
 
-- Super-easy deployment: This method is designed for using in AWS Cloud Shell or EC2 instance. Or you can use it in your local terminal.
-- Using CDK: This method is designed for using in Cloud9. Notice that it requires large amount of space to register container layers. Expand your disk of VM for Cloud9 before you deploy.
+- Super-easy deployment: This method is designed for the very first user of BrChat.
+- Using CDK: Notice that it requires large amount of space to register container layers. Expand your disk of VM for Cloud9 before you deploy.
 
 Both method require usig CDK config file in cdk/cdk.js. To use custom bootstrap, please refer to [deploy.md](deploy.md).
 
@@ -110,7 +110,7 @@ You can specify the following parameters during deployment to enhance security a
 - **--bedrock-region**: Define the region where bedrock is available. (default: us-east-1)
 - **--version**: The version of Bedrock Claude Chat to deploy. (default: latest version in development)
 
-> [!Warning] Currently, the WAF for CloudFront needs to be created in the North America region (us-east-1), so the stacks are separated. https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html
+> [!Note] Currently, the WAF for CloudFront needs to be created in the North America region (us-east-1), so the stacks are separated. https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html
 > Since the bin.sh script will create CloudFront automatically with `cdk bootstrap` in region us-east-1 and it must be in region us-east-1 ([doc](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-resource-wafv2-webacl.html)), if you wish to create a bedrock in other regions, assign the parameter "bedrock-region" as parameter when running bin.sh.
 
 #### Example command with parameters:
