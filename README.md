@@ -69,10 +69,8 @@ By using the [Agent functionality](./docs/AGENT.md), your chatbot can automatica
 ## Deployment
 There are two ways to deploy a chatbot:
 
-- Super-easy deployment: This method is designed for the very first user of BrChat.
-- Using CDK: Notice that it requires large amount of space to register container layers. Expand your disk of VM for Cloud9 before you deploy.
-
-Both method require usig CDK config file in cdk/cdk.js. To use custom bootstrap, please refer to [deploy.md](deploy.md).
+- [Super-easy deployment](https://github.com/fbukevin/bedrock-claude-chat/edit/v2/README.md#-super-easy-deployment): This method is designed for the very first user.
+- [Using CDK](https://github.com/fbukevin/bedrock-claude-chat/edit/v2/README.md#deploy-using-cdk): Notice that it requires large amount of space to register container layers. Expand your disk of machine.
 
 ## 🚀 Super-easy Deployment
 
